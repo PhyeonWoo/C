@@ -10,7 +10,7 @@ window.initMap = function () {
         { label: "B", name: "상계 맑은내과의원\n", lat: 37.650503, lng: 127.061960, phone: "전화번호 : 02-930-7616\n", 
           time: "진료시간 : 월~금 09:00 ~ 16:30\n",details: "상세정보 : 서울 노원구 동일로 1366 삼봉빌딩 5층\n"},
 
-        { label: "C", name: "천내과\n", lat: 36.658443, lng: 127.061959, phone: "전화번호 : 02-3296-3311\n",
+        { label: "C", name: "천내과\n", lat: 37.648443, lng: 127.061959, phone: "전화번호 : 02-3296-3311\n",
          time: "진료시간 : 월,화,수,금 09:00 ~ 18:00\n",details:"서울 노원구 동일로 1343 동일프라자 301호"},
 
         { label: "D", name: "연세내과\n", lat: 37.654387, lng: 127.062681, phone: "전화번호 : 02-952-6671\n",
@@ -35,7 +35,7 @@ window.initMap = function () {
         
         marker.addListener("click", () => {
             map.panTo(marker.position);
-            infoWindow.setContent(`<strong><span style="font-size:18px;">${name}</strong><br>${phone}<br>${time}<br>${details}`);
+            infoWindow.setContent(`<strong><span style="font-size:18px;">${name}</strong><br><span style="font-size:13px;">${phone}<br><span style="font-size:13px;">${time}<br><span style="font-size:13px;">${details}`);
             infoWindow.open({
                 anchor: marker,
                 map

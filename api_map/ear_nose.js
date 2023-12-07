@@ -32,7 +32,7 @@ window.initMap = function () {
         
         marker.addListener("click", () => {
             map.panTo(marker.position);
-            infoWindow.setContent(`<strong>${name}</strong><br>${phone}<br>${time}<br>${details}`);
+            infoWindow.setContent(`<strong><span style="font-size:18px;">${name}</strong><br><span style="font-size:13px;">${phone}<br><span style="font-size:13px;">${time}<br><span style="font-size:13px;">${details}`);
             infoWindow.open({
                 anchor: marker,
                 map
